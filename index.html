@@ -32,6 +32,7 @@
         </section>
 
         <section>
+          <h4>The problem</h4>
           <div style="display:inline-block;float:left;width:50%;">
             <img data-src="tweets/page1/spoon.png" />
             <img data-src="tweets/page1/adventure.png" />
@@ -47,6 +48,7 @@
         </section>
 
         <section>
+          <h4>More problems...</h4>
           <div style="display:inline-block;float:left;width:50%;">
             <img data-src="tweets/page2/nipples.png" />
             <img data-src="tweets/page2/cheese.png" />
@@ -66,7 +68,8 @@
         </section>
 
         <section>
-          <video id="shopping_watch" controls data-autoplay>
+          <h6>Video that starts 10 seconds in</h6>
+          <video height="600" id="shopping_watch" controls data-autoplay>
             <source data-src="watching_shopping.mov" />
           </video>
         </section>
@@ -82,7 +85,7 @@
       });
       // Start at 20 seconds in
       document.getElementById('shopping_watch').addEventListener('loadedmetadata', function() {
-      this.currentTime = 20;
+      this.currentTime = 10;
       }, false);
     </script>
   </body>
