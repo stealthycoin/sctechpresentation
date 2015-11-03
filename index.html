@@ -66,7 +66,7 @@
         </section>
 
         <section>
-          <video controls data-autoplay>
+          <video id="shopping_watch" controls data-autoplay>
             <source data-src="watching_shopping.mov" />
           </video>
         </section>
@@ -80,6 +80,10 @@
       // Required, even if empty.
       Reveal.initialize({
       });
+      // Start at 20 seconds in
+      document.getElementById('shopping_watch').addEventListener('loadedmetadata', function() {
+      this.currentTime = 20;
+      }, false);
     </script>
   </body>
   </html>
