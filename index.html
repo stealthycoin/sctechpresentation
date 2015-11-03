@@ -69,8 +69,8 @@
 
         <section>
           <h6>Video that starts 10 seconds in</h6>
-          <video height="600" id="shopping_watch" controls data-autoplay>
-            <source data-src="watching_shopping.mov" />
+          <video height="600" controls data-autoplay>
+            <source data-src="watching_shopping.mov#t=10,20" />
           </video>
         </section>
 
@@ -84,9 +84,6 @@
       Reveal.initialize({
       });
       // Start at 20 seconds in
-      document.getElementById('shopping_watch').addEventListener('loadedmetadata', function() {
-      this.currentTime = 10;
-      }, false);
     </script>
   </body>
   </html>
