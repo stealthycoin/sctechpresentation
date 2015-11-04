@@ -11,6 +11,9 @@
     <script>
       $(document).ready(function(){
         collage.position("#tweets0");
+        $("#chore-vid")[0].defaultPlaybackRate= 2.0;
+        $("#shopping-vid")[0].defaultPlaybackRate= 1.5;
+        $("#bill-vid")[0].defaultPlaybackRate= 1.5;
       });
     </script>
 
@@ -20,12 +23,30 @@
         <script src="lib/js/html5shiv.js"></script>
         <![endif]-->
   </head>
-
-  <body>
+  <!-- HEADS UP I changed the opacity of the whole project-->
+  <body style="-webkit-filter:opacity(0.85);">
     <!-- Wrap the entire slide show in a div using the "reveal" class. -->
     <div class="reveal">
       <!-- Wrap all slides in a single "slides" class -->
       <div class="slides">
+
+<style>
+        .boys {
+            display: inline-block;
+            margin: 20px !important;
+        }
+        .boys span {
+            font-size: 22px;
+        }
+        .imgfix {
+            margin:15px;
+            border: 0 !important;
+            background:none !important;
+            box-shadow:none !important;
+            width: 210px !important;
+            border-radius: 100%;
+        }
+        </style>
 
         <!-- ALL SLIDES GO HERE -->
         <!-- Each section element contains an individual slide -->
@@ -35,7 +56,27 @@
           <p>start harmonizing your home</p>
         </section>
 
-        <section id="show-a-link">
+
+        <section data-background="bg1.png">
+        <h3>The Team</h3>
+          <div class="boys">
+                <img data-src="john.jpg" class="imgfix" />
+                <br />
+                <span>John Carlyle</span>
+            </div>
+            <div class="boys">
+                <img data-src="morgan.jpg" class="imgfix" />
+                <br />
+                <span>Morgan McDermott</span>
+            </div>
+            <div class="boys">
+                <img data-src="jeremy.jpg" class="imgfix" />
+                <br />
+                <span>Jeremy Crowe</span>
+            </div>
+        </section>
+
+        <section id="show-a-link" data-background="bg2.png">
           <h3>What is hearth</h3>
           <img src="multi_devices.png" style='margin: 15px; border: 0; background: none; box-shadow: none;'/>
         </section>
@@ -65,9 +106,14 @@
           <img data-src="tweets/chores.png" style='border-radius:15px; border: 0; background: none; box-shadow: none;'/>
         </section>
 
-        <section style="height:100%;">
-          <h6>Chore up!</h6>
-          <video style="height:100%;width:auto;" controls data-autoplay>
+        <section style="height:100%;" data-background="#000000">
+          <h6>Chore Time!</h6>
+          <div style="margin-bottom:-55px;">
+              <span>Crystal</span>
+              <span style="margin-left:256px;">Kendall</span>
+          </div>
+
+          <video id="chore-vid" style="height:90%;width:auto;" controls>
             <source data-src="videos/video1.mp4" />
           </video>
         </section>
@@ -77,10 +123,14 @@
         </section>
 
 
-        <section style="height:100%;">
+        <section style="height:100%;" data-background="#000000">
           <h6>Time to go shopping!</h6>
-          <video style="height:100%;width:auto;" controls data-autoplay>
-            <source data-src="videos/video2.mp4" />
+          <div style="margin-bottom:-55px;">
+              <span>Crystal</span>
+              <span style="margin-left:256px;">Kendall</span>
+          </div>
+          <video id="shopping-vid" style="height:90%;width:auto;" controls>
+            <source data-src="videos/video2.mp4#t=1,26" />
           </video>
         </section>
 
@@ -88,10 +138,14 @@
           <img data-src="tweets/ashley.png" style='border-radius:15px; border: 0; background: none; box-shadow: none;'/>
         </section>
 
-        <section style="height:100%;">
+        <section style="height:100%;" data-background="#000000">
           <h6>Don't miss rent!</h6>
-          <video style="height:100%;width:auto;" controls data-autoplay>
-            <source data-src="videos/video3.mp4" />
+          <div style="margin-bottom:-55px;">
+              <span>Ashley</span>
+              <span style="margin-left:256px;">Crystal</span>
+          </div>
+          <video id="bill-vid" style="height:90%;width:auto;" controls>
+            <source data-src="videos/video3.mp4#t=2,42.3" />
           </video>
         </section>
 
