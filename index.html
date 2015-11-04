@@ -5,6 +5,16 @@
     <title>Hearth Presentation</title>
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/blood.css" id="theme">
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="collage.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        collage.position("#tweets0");
+      });
+    </script>
+
+
     <!--Add support for earlier versions of Internet Explorer -->
     <!--[if lt IE 9]>
         <script src="lib/js/html5shiv.js"></script>
@@ -34,13 +44,11 @@
 
         <section>
           <h4>The problem</h4>
-          <div style="display:inline-block;float:left;width:50%;">
+          <div id='tweets0'>
             <img data-src="tweets/page1/spoon.png" />
             <img data-src="tweets/page1/adventure.png" />
             <img data-src="tweets/page1/shots.png" />
             <img data-src="tweets/page1/feet.png" />
-          </div>
-          <div style="display:inline-block;float:left;width:50%;">
             <img data-src="tweets/page1/heather.png"/>
             <img data-src="tweets/page1/toilet.png" />
             <img data-src="tweets/page1/dishes.png" />
@@ -49,7 +57,6 @@
         </section>
 
         <section>
-          <h4>More problems...</h4>
           <div style="display:inline-block;float:left;width:50%;">
             <img data-src="tweets/page2/nipples.png" />
             <img data-src="tweets/page2/cheese.png" />
