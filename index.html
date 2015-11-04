@@ -2,9 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Reveal.js 3 Slide Demo</title>
+    <title>Hearth Presentation</title>
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/blood.css" id="theme">
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="collage.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        collage.position("#tweets0");
+      });
+    </script>
+
+
     <!--Add support for earlier versions of Internet Explorer -->
     <!--[if lt IE 9]>
         <script src="lib/js/html5shiv.js"></script>
@@ -20,7 +30,8 @@
         <!-- ALL SLIDES GO HERE -->
         <!-- Each section element contains an individual slide -->
         <section>
-          <h1>Hearth</h1>
+          <!--<h1>Hearth</h1>-->
+          <img src='blue_logo.png' style='margin: 15px; border: 0; background: none; box-shadow: none;'/>
           <p>start harmonizing your home</p>
         </section>
 
@@ -33,13 +44,11 @@
 
         <section>
           <h4>The problem</h4>
-          <div style="display:inline-block;float:left;width:50%;">
+          <div id='tweets0'>
             <img data-src="tweets/page1/spoon.png" />
             <img data-src="tweets/page1/adventure.png" />
             <img data-src="tweets/page1/shots.png" />
             <img data-src="tweets/page1/feet.png" />
-          </div>
-          <div style="display:inline-block;float:left;width:50%;">
             <img data-src="tweets/page1/heather.png"/>
             <img data-src="tweets/page1/toilet.png" />
             <img data-src="tweets/page1/dishes.png" />
@@ -48,7 +57,6 @@
         </section>
 
         <section>
-          <h4>More problems...</h4>
           <div style="display:inline-block;float:left;width:50%;">
             <img data-src="tweets/page2/nipples.png" />
             <img data-src="tweets/page2/cheese.png" />
@@ -63,8 +71,7 @@
         </section>
 
         <section>
-          <h2>Lets solve a problem</h2>
-          <img data-src="tweets/kendallann.png" />
+          <img data-src="tweets/chores.png" />
         </section>
 
         <section style="height:100%;">
@@ -82,8 +89,7 @@
         </section>
 
         <section>
-          <h2>Lets solve so many more problem</h2>
-          <img data-src="tweets/foil.png" />
+          <img data-src="tweets/shopping.png" />
         </section>
 
 
@@ -93,6 +99,10 @@
           <video height="600" controls data-autoplay>
             <source data-src="videos/watching_shopping.mov#t=30,40" />
           </video>
+        </section>
+
+        <section>
+          <img data-src="tweets/ashley.png" />
         </section>
 
         <section>
