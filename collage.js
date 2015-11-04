@@ -18,7 +18,16 @@ var collage = (function(){
                 }
 
                 el.css("position","relative")
-                el.css("margin-top", "-"+(100+Math.random()*50)+"px");
+                var hmul = Math.floor(idx/8);
+                var h = $(this).parents(".slides").height();
+                el.css("top", "-"+ (0.9 * h * hmul)+"px");
+
+                if(idx % 8 === 0){
+                    el.css("margin-top", "-"+(100+Math.random()*50)+"px");
+                }
+                else {
+                    el.css("margin-top", "-"+(100+Math.random()*50)+"px");
+                }
 
 
                 var shift = 10 + Math.ceil(Math.random() * 30)
@@ -35,6 +44,7 @@ var collage = (function(){
                 console.log(e);
             });*/
             $(document).keypress(function(e){
+
                 if(e.keyCode === 116){
                     var found = false;
                     obj.find("img").each(function(){
