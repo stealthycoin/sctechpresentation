@@ -39,8 +39,10 @@ var collage = (function(){
                     var found = false;
                     obj.find("img").each(function(){
                         if(found){ return; }
-
-                        return found;
+                        if($(this).css("opacity") == 0){
+                            $(this).css("opacity", "1.0");
+                            return found;
+                        }
                     });
                 }
             });
